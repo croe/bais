@@ -326,3 +326,21 @@ iframe {
   display: block;
   margin: 60px auto 0;
 }
+
+.pc {
+  display: block;
+}
+@media only screen and (max-width: 650px) {
+  .pc {
+    display: none;
+  }
+}
+
+.sp {
+  display: none;
+}
+@media only screen and (max-width: 650px) {
+  .sp {
+    display: block;
+  }
+}
