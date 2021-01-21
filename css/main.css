@@ -12,6 +12,7 @@
    ========================================================================== */
 
 html {
+  font-family: 'Heebo', 'Noto Sans JP', sans-serif;
   color: #222;
   font-size: 1em;
   line-height: 1.4;
@@ -260,4 +261,68 @@ textarea {
     page-break-after: avoid;
   }
 }
+.container {
+  padding: 0 0 80px;
+}
+.main-visual {
+  position: relative;
+}
+.main-visual img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+@keyframes moving {
+  0% {
+    transform: translate(-50%, -15px) rotate(45deg);
+    opacity: 0;
+  }
+  60% {
+    transform: translate(-50%, 0) rotate(45deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, 5px) rotate(45deg);
+    opacity: 0;
+  }
+}
+.main-visual:after {
+  content: '';
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  width: 15px;
+  height: 15px;
+  border-right: 2px solid #666666;
+  border-bottom: 2px solid #666666;
+  animation: moving infinite 1500ms ease-in;
+}
+@media only screen and (max-width: 650px) {
+  .main-visual img {
+    width: 100%;
+    height: 100vh;
+    object-fit: contain;
+  }
+}
+.description {
+  text-align: center;
+}
+.description h1 {
+  display: block;
+  font-weight: lighter;
+  letter-spacing: 0.08em;
+  margin: 80px 0 40px;
+}
+.description p {
 
+}
+.description .manual {
+  margin: 20px;
+}
+.description .manual img {
+  width: 100%;
+}
+iframe {
+  display: block;
+  margin: 60px auto 0;
+}

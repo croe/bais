@@ -2,40 +2,53 @@
 <html class="no-js" lang="">
 
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ELFZL03475"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-ELFZL03475');
+  </script>
   <meta charset="utf-8">
-  <title></title>
-  <meta name="description" content="">
+  <title>BAIS | Akihiro Kato</title>
+  <meta name="description" content="「BAIS」は人とAIが手をとり合う街、BAIS CITYの市民となるボードゲーム作品です。">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-
+  <meta property="og:title" content="BAIS | Akihiro Kato">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://bais.city">
+  <meta property="og:image" content="https://bais.city/img/ogp.png">
+  <meta name="twitter:card" content="summary_large_image" />
   <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
-
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
-
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Heebo&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500&display=swap" rel="stylesheet">
   <meta name="theme-color" content="#fafafa">
+  <link rel="icon" type="image/png" href="icon.png">
 </head>
 
 <body>
-
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
-
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
+<main class="container">
+  <div class="main-visual">
+    <picture>
+      <source media="(min-width: 650px)" srcset="img/thumbnail.jpg">
+      <img src="img/thumbnail-1x1.jpg" alt="BAIS">
+    </picture>
+  </div>
+  <section class="description">
+    <div class="manual">
+      <img src="img/manual-1.png" alt="manual 1">
+    </div>
+    <div class="manual">
+      <img src="img/manual-2.png" alt="manual 2">
+    </div>
+  </section>
+  <iframe frameborder="0" height="480" width="320" src="https://akihirokato.official.ec/items/38905788/widget/large" ></iframe>
+</main>
+<script src="js/vendor/modernizr-3.11.2.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
 </body>
-
 </html>
