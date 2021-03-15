@@ -667,6 +667,13 @@ body {
 .howtoSection__judgementPhoto {
   width: 580px;
 }
+.howtoSection__judgementImage {
+  width: 100%;
+  margin: 30px 0 0;
+}
+.howtoSection__judgementImage img {
+  width: 160px;
+}
 .howtoSection__future {
   margin: 120px 0;
 }
