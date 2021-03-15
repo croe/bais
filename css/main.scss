@@ -1,0 +1,201 @@
+@import '../node_modules/normalize-scss/sass/normalize';
+@include normalize();
+@import '../node_modules/reset-css/sass/reset';
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+body {
+  font-family: 'Noto Sans JP', "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro", "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "メイリオ", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  color: #4F4F4F;
+}
+
+.heroSection {
+  img {
+    margin: 100px auto;
+    width: 860px;
+  }
+  &__scroll {
+    font-size: 24px;
+    font-weight: lighter;
+    letter-spacing: 0.024rem;
+    color: #7c7c7c;
+    text-align: center;
+    &:after {
+      content: '';
+      display: inline-block;
+      text-align: center;
+      margin: 8px 0 64px;
+      width: 32px;
+      height: 32px;
+      border-bottom: 1px solid #bdbdbd;
+      border-left: 1px solid #bdbdbd;
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+.welcomeSection {
+
+}
+
+.aboutSection {
+  position: relative;
+  padding: 240px 0 50px;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 55.69%;
+    background-image: url("../img/bg-city.jpg");
+    background-size: cover;
+    z-index: -1;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 49.79%;
+    background-image: url("../img/bg-map.jpg");
+    background-size: cover;
+    z-index: -1;
+  }
+  &__bais {
+    h3 {
+      font-family: 'Roboto', sans-serif;
+      font-size: 24px;
+      b {
+        font-size: 40px;
+      }
+    }
+  }
+  &__citizens {
+    position: relative;
+    margin-top: 140px;
+    &Text {
+      width: calc(100% - 430px);
+      padding: 0 80px 0 0;
+      h3 {
+        font-size: 2rem;
+      }
+    }
+    &Image {
+      position: relative;
+      width: 430px;
+      img {
+        height: 300px;
+      }
+    }
+  }
+  &__city {
+    margin-top: 140px;
+    &Text {
+      width: calc(100% - 560px);
+      padding: 0 0 0 56px;
+      h3 {
+        font-size: 2rem;
+      }
+      img {
+        width: 100px;
+      }
+    }
+    &Image {
+      position: relative;
+      width: 560px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.howtoSection {
+  h2 {
+    margin: 140px auto;
+    font-family: 'Roboto', sans-serif;
+    font-size: 64px;
+  }
+  &__planning {
+    &Text {
+      width: calc(100% - 580px);
+      padding: 0 48px 0 0;
+      h3 {
+        font-size: 2rem;
+      }
+    }
+    &Wrap {
+      position: relative;
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: -35px;
+        left: -35px;
+        width: 140px;
+        height: 140px;
+        background-image: url("../img/howto-planning.png");
+        background-size: contain;
+      }
+    }
+    &Photo {
+      width: 580px;
+    }
+  }
+  &__calculation {
+    margin: 180px 0 0;
+    &Text {
+      width: calc(100% - 580px);
+      padding: 0 0 0 48px;
+      h3 {
+        font-size: 2rem;
+      }
+    }
+    &Photo {
+      width: 580px;
+    }
+  }
+  &__judgement {
+    margin: 180px 0 0;
+    &Text {
+      width: calc(100% - 580px);
+      padding: 0 48px 0 0;
+      h3 {
+        font-size: 2rem;
+      }
+    }
+    &Photo {
+      width: 580px;
+    }
+  }
+  &__future {
+    margin: 120px 0;
+  }
+}
+
+.storeSection {
+  width: 640px;
+  margin: 120px auto 0;
+}
+
+.creditSection {
+  h3 {
+    font-size: 1.75rem;
+    color: #6b6b6b;
+  }
+  p {
+    margin: 12px 0 0;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #828282;
+  }
+}
+
+footer {
+  p {
+    color: #9A9A9A;
+  }
+}
